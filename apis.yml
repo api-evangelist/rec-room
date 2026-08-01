@@ -1,8 +1,24 @@
 aid: rec-room
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rec-room.png
 name: Rec Room
-description: 'Rec Room is a company surfaced as a portfolio company of index-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: entertainment. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Rec Room is a cross-platform social gaming and user-generated-content platform where players
+  hang out, play, and build their own rooms and games using in-app creation tools (Rec Room Studio and the
+  visual Circuits scripting system). It runs on PC, PlayStation, Xbox, Meta Quest VR, iOS, and Android with
+  a shared avatar and economy. Founded in 2016 (originally as Against Gravity) and headquartered in Seattle,
+  the company is backed by Index Ventures among other investors. Rec Room publishes a consumer platform at
+  rec.net; no official public developer API or documented developer program was found during enrichment (the
+  site is served behind Cloudflare and an internal api.rec.net host exists but is undocumented/unofficial).'
 url: https://raw.githubusercontent.com/api-evangelist/rec-room/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Entertainment
+- Gaming
+- Virtual Reality
+- Social Platform
+- User Generated Content
+- Metaverse
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/rec-room-domain-security.yml
 - type: Website
-  url: http://rec.net
+  url: https://rec.net
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
